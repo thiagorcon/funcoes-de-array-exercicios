@@ -16,6 +16,8 @@ const produtos = [
  
  let kitLimpeza = produtos.filter ((limp) => {
     if (limp.categoria === 'Limpeza')
-    return limp.nome 
+    return true
+ }).map((limp) => {
+    return limp.nome
  })
- console.log(kitLimpeza);
+ console.log(kitLimpeza)
